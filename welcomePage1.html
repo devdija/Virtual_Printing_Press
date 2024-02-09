@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Welcome page1</title>
+</head>
+<body class="font-[Roboto]">
+    <header class="bg-white border-2 top-0 z-50" >
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-[114px]" src="src/resource/logo/logo.jpg" alt="...">
+            </div>
+            <div class="nav-links md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col  md:items-center md:gap-[4vw] gap-8">
+                    <li><a class="hover:text-[#018ED3]" href="#">Print a Document</a></li>
+                    <li><a class="hover:text-[#018ED3]" href="#">Provide a Service</a></li>
+                    <li><a class="hover:text-[#018ED3]" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                 <button class="bg-[#018ED3] text-white px-6 py-2 m rounded-full hover:bg-[skyblue]">Sign in</button>
+                 <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3x1 cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-white py-10 flex justify-center rounded-3x1 border-gray-700 text-white">
+        <div class="left bg-[#018ED3] w-[380px] rounded-l-xl px-5 py-5">
+            <h1 class="font-bold text-2xl">Its that easy !!!</h1>
+            <p>Upload your file</p>
+            <p>Get quality deliveries in estimated real time</p>
+            <img class="max-w-xs" src="src/resource/logo/_Download__Epson_Stylus_SX415_Driver_Download-removebg-preview.png" alt="">
+        </div>
+        <div class="right text-[#1F1F1F] bg-[#EFEFEF] py-5 px-5 rounded-r-xl border-black w-[380px]">
+            <h1 class="font-bold text-2xl">Create an account</h1>
+            <p>Already have an account? <a class="text-[#018ED3]" href="">Login</a></p>
+            <div class="links bg-white flex w-[300px] rounded-2xl m-2">
+                <img class="w-6 h-6 mt-5 m-5" src="src/resource/logo/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13-removebg-preview.png" alt="">
+                <a class="py-5" href="https://google.com/login">Continue with google</a>
+            </div>
+            <div class="links bg-white flex w-[300px] rounded-2xl m-2 ">
+                <img class="w-6 h-6 mt-5 m-5" src="src/resource/logo/png-transparent-email-email-thumbnail-removebg-preview.png" alt="">
+                <a class="py-5" href="https://google.com/login">Continue with google</a>
+            </div>
+            <div class="links bg-white flex w-[300px] rounded-2xl m-2 ">
+                <img class="w-6 h-6 mt-5 m-5" src="src/resource/logo/phone-call.png" alt="">
+                <a class="py-5" href="https://google.com/login">Continue with google</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="bg-[#1F1F1F] py-2">
+        <div class="container mx-auto text-white">
+            <div class="max-w-7x1 mx-auto">
+                <div class="grid md:grid-cols-3 grid-cols-3 gap-40">
+                    <div class="mb-3">
+                        <img class="w-[114px]" src="src/resource/logo/logo.svg " alt="">
+                        <p>VirtualPrintingPress 2024</p>
+                    </div>
+                   <div class="mb-3 mt-10">
+                        <ul class="flex space-x-3">
+                            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> 
+                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li> 
+                            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> 
+                        </ul>
+                   </div>
+                    <div class="mb-3 mt-10">
+                        <div class="flex space-x-2">
+                            <ion-icon name="globe-outline" class="mt-1"></ion-icon>
+                            <p>English</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function onToggleMenu(togg){
+            const navLinks = document.querySelector('.nav-links')
+            togg.name = togg.name === 'menu-outline' ? 'close' : 'menu-outline'
+            navLinks.classList.toggle('top-[1%]')
+        }
+    </script>
+</body>
+</html>
