@@ -1,0 +1,20 @@
+{
+  "name": "virtual_printing_press",
+  "version": "1.0.0",
+  "description": "A virtual printing press system\r # https://github.com/devdija/Virtual_Printing_Press",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdija/Virtual_Printing_Press.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devdija/Virtual_Printing_Press/issues"
+  },
+  "homepage": "https://github.com/devdija/Virtual_Printing_Press#readme"
+}

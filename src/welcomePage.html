@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Welcome page</title>
+</head>
+<body class="font-[Roboto] bg-[#0D44F9]">
+    <header class="bg-white border-2 top-0 z-50 py-4" >
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-[114px]" src="resource/logo/logo.jpg" alt="...">
+            </div>
+            <div class="nav-links md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col  md:items-center md:gap-[4vw] gap-8">
+                    <li><a class="hover:text-[#018ED3]" href="#">Print a Document</a></li>
+                    <li><a class="hover:text-[#018ED3]" href="#">Provide a Service</a></li>
+                    <li><a class="hover:text-[#018ED3]" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                 <button class="bg-[rgb(1,142,211)] text-white px-6 py-2 m rounded-full hover:bg-[skyblue]">Sign in</button>
+                 <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3x1 cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <section class="hero_section bg-white h-screen">
+
+            <div class="logo relative left-0 p-10 ">
+                <img src="./resource/logo/logo.jpg" alt="">
+            
+                <h3 class="font-bold text-4xl my-10">Get your <span class="text-[#0D44F9]">files</span> and <span class="text-[#0D44F9]">Documents</span> done through our virtual printing service</h3>
+        
+            <button class="bg-[#018ED3] text-white px-5 py-2 rounded-full">Get started</button>
+        </div>
+        <div class="hero_image absolute top-20 right-0">
+        <div class="relative right-0">
+                <div class="bg-[#0D44F9] h-80 w-80 rounded-full">
+                    <img src="./resource/images/NoPath.jpg" alt="" class=" absoluteh-80 w-80">
+                </div>
+                <div class="bg-[#0D44F9] h-32 w-32 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_1 bg-white my-20 mx-10 p-10 rounded xl:justify-center items-center"> 
+       
+            <h2 class="text-4xl font-bold text-center space-y-4">Why choose our service ?</h2>
+     
+        <div class="flex justify-center space-x-20  m-10">
+           
+            <div>
+                <img src="./resource/logo/Money income-amico (1).jpg" alt="..." class="w-60 h-40">
+                
+            </div>
+            <div class="space-y-10 ml">
+                <h2 class="text-xl font-bold">Cost effective</h2>
+                <p>Virtual printing often be more cost-effective than traditional printing 
+                    methods</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center space-x-20">
+            <div class="space-y-10">
+                <h2 class="text-xl font-bold">Conveniences</h2>
+                <p>User can print from the comfort of their own home , without having to 
+                    visit a physical print shop </p>
+            </div>
+                <div>
+                    <img src="./resource/logo/House bookshelves-rafiki.jpg" alt="..." class="w-60 h-40">
+                    
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div>
+                    <img src="./resource/images/Printed circuit board-bro (1).png" alt="..." class="w-60 h-40">
+                    
+                </div>
+                <div class="space-y-10">
+                    <h2 class="text-xl font-bold">Time saving</h2>
+                    <p>With virtual printing users can avoid long lines and wait times</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                
+                <div class=" space-y-10">
+                    <h2 class="text-xl font-bold">High-quality results</h2>
+                    <p>With the latest printing technology, users can be assured of high quality
+                        results</p>
+                </div>
+                <div>
+                    <img src="./resource/images/Printed circuit board-bro (1).png" alt="..." class="w-60 h-40">
+                    
+                </div>
+            </div>
+    </section>
+
+    <section class="section_2 bg-white my-20 mx-10 p-10 rounded xl:justify-center items-center">
+        <h2 class="text-3xl font-bold text-center">How it works</h2>
+        <div class="flex justify-center p-4 text-xl">
+            <div class="text-center">
+                <h4 class="text-center font-bold">1</h4>
+                <img src="./resource/logo/Upload-rafiki.jpg" alt="">
+                <p class="font-bold">upload your documents</p>
+            </div>
+            <div class="text-center">
+                <h4 class=" text-center font-bold">2</h4>
+                <img src="./resource/logo/Printing invoices-rafiki.jpg" alt="">
+                <p class="font-bold">We print and process</p>
+            </div>
+            <div class="text-center">
+                <h4 class="font-bold">3</h4>
+                <img src="./resource/logo/Delivery-rafiki.jpg" alt="">
+                <p class=" font-bold">Quality delivery</p>
+            </div>
+        </div>
+    </section>
+    <section class="section_2 bg-white my-20 mx-10 p-10 rounded xl:justify-center items-center">
+        <h2 class="text-center font-bold text-3xl">Success stories</h2>
+    <div class="">
+        <div>
+
+        </div>
+    </div>
+    </section>
+    <!-- this is the footer  -->
+    <footer class="bg-[#1F1F1F] py-2 h-40">
+        <div class="container mx-auto text-white">
+            <div class="max-w-7x1 mx-auto">
+                <div class="grid md:grid-cols-3 grid-cols-3 gap-40">
+                    <div class="mb-3">
+                        <img class="w-[114px]" src="src/resource/logo/logo.svg " alt="">
+                        <p>VirtualPrintingPress 2024</p>
+                    </div>
+                   <div class="mb-3 mt-10">
+                        <ul class="flex space-x-3">
+                            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> 
+                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li> 
+                            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> 
+                        </ul>
+                   </div>
+                    <div class="mb-3 mt-10">
+                        <div class="flex space-x-2">
+                            <ion-icon name="globe-outline" class="mt-1"></ion-icon>
+                            <p>English</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function onToggleMenu(togg){
+            const navLinks = document.querySelector('.nav-links')
+            togg.name = togg.name === 'menu-outline' ? 'close' : 'menu-outline'
+            navLinks.classList.toggle('top-[1%]')
+        }
+    </script>
+</body>
+</html>
